@@ -35,7 +35,7 @@ function os2web_portals_citizen_default_page_manager_handlers() {
           'settings' => array(
             'vid' => '11',
             11 => array(
-              10948 => '10948',
+              10959 => '10959',
             ),
             1 => array(),
             15 => array(),
@@ -141,11 +141,11 @@ function os2web_portals_citizen_default_page_manager_handlers() {
       'feed_icons' => 0,
       'panel_args' => 0,
       'link_to_view' => 0,
-      'args' => '10948',
+      'args' => 'Borger',
       'url' => '',
       'display' => 'block_2',
       'context' => array(
-        0 => '',
+        0 => 'argument_term_1.tid',
       ),
       'override_title' => 1,
       'override_title_text' => '',

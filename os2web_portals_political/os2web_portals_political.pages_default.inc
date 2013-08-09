@@ -43,7 +43,7 @@ function os2web_portals_political_default_page_manager_handlers() {
           'settings' => array(
             'vid' => '11',
             11 => array(
-              10947 => '10947',
+              10958 => '10958',
             ),
             1 => array(),
             15 => array(),
@@ -216,7 +216,7 @@ function os2web_portals_political_default_page_manager_handlers() {
       'feed_icons' => 0,
       'panel_args' => 1,
       'link_to_view' => 0,
-      'args' => '10947',
+      'args' => 'politik-og-planer',
       'url' => '',
       'display' => 'block_2',
       'context' => array(
@@ -238,6 +238,42 @@ function os2web_portals_political_default_page_manager_handlers() {
     $pane->locks = array();
     $display->content['new-5'] = $pane;
     $display->panels['middle_right'][0] = 'new-5';
+    $pane = new stdClass();
+    $pane->pid = 'new-6';
+    $pane->panel = 'middle_right';
+    $pane->type = 'views';
+    $pane->subtype = 'os2web_contact_view_contact';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_pager_settings' => 0,
+      'use_pager' => 0,
+      'nodes_per_page' => '1',
+      'pager_id' => '0',
+      'offset' => '0',
+      'more_link' => 0,
+      'feed_icons' => 0,
+      'panel_args' => 0,
+      'link_to_view' => 0,
+      'args' => '',
+      'url' => '',
+      'display' => 'block',
+      'context' => array(
+        0 => '',
+      ),
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $display->content['new-6'] = $pane;
+    $display->panels['middle_right'][1] = 'new-6';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

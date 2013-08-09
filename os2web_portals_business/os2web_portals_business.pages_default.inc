@@ -43,7 +43,7 @@ function os2web_portals_business_default_page_manager_handlers() {
           'settings' => array(
             'vid' => '11',
             11 => array(
-              10946 => '10946',
+              10957 => '10957',
             ),
             1 => array(),
             15 => array(),
@@ -147,11 +147,11 @@ function os2web_portals_business_default_page_manager_handlers() {
       'feed_icons' => 0,
       'panel_args' => 0,
       'link_to_view' => 0,
-      'args' => '10946',
+      'args' => 'erhverv',
       'url' => '',
       'display' => 'block_2',
       'context' => array(
-        0 => '',
+        0 => 'argument_term_1.tid',
       ),
       'override_title' => 1,
       'override_title_text' => '',
@@ -199,6 +199,30 @@ function os2web_portals_business_default_page_manager_handlers() {
     $pane = new stdClass();
     $pane->pid = 'new-4';
     $pane->panel = 'middle_top';
+    $pane->type = 'block';
+    $pane->subtype = 'block-7';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => 'Erhvervsrådgivning',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'grid-3  omega erhvervsraadgiver',
+    );
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $display->content['new-4'] = $pane;
+    $display->panels['middle_top'][1] = 'new-4';
+    $pane = new stdClass();
+    $pane->pid = 'new-5';
+    $pane->panel = 'middle_top';
     $pane->type = 'views_panes';
     $pane->subtype = 'os2web_spotbox_view_spots-panel_pane_5';
     $pane->shown = TRUE;
@@ -219,12 +243,36 @@ function os2web_portals_business_default_page_manager_handlers() {
       'css_class' => 'grid-6 alpha ',
     );
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 2;
     $pane->locks = array();
-    $display->content['new-4'] = $pane;
-    $display->panels['middle_top'][1] = 'new-4';
+    $display->content['new-5'] = $pane;
+    $display->panels['middle_top'][2] = 'new-5';
     $pane = new stdClass();
-    $pane->pid = 'new-5';
+    $pane->pid = 'new-6';
+    $pane->panel = 'middle_top';
+    $pane->type = 'block';
+    $pane->subtype = 'block-6';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => 'Links',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'grid-3 omega links-erhverv',
+    );
+    $pane->extras = array();
+    $pane->position = 3;
+    $pane->locks = array();
+    $display->content['new-6'] = $pane;
+    $display->panels['middle_top'][3] = 'new-6';
+    $pane = new stdClass();
+    $pane->pid = 'new-7';
     $pane->panel = 'middle_top';
     $pane->type = 'views_panes';
     $pane->subtype = 'os2web_spotbox_view_spots-panel_pane_6';
@@ -232,7 +280,7 @@ function os2web_portals_business_default_page_manager_handlers() {
     $pane->access = array();
     $pane->configuration = array(
       'arguments' => array(
-        'nid' => '27,26,25',
+        'nid' => '292846,292845,292847',
       ),
     );
     $pane->cache = array();
@@ -244,10 +292,10 @@ function os2web_portals_business_default_page_manager_handlers() {
       'css_class' => 'grid-9 alpha omega',
     );
     $pane->extras = array();
-    $pane->position = 2;
+    $pane->position = 4;
     $pane->locks = array();
-    $display->content['new-5'] = $pane;
-    $display->panels['middle_top'][2] = 'new-5';
+    $display->content['new-7'] = $pane;
+    $display->panels['middle_top'][4] = 'new-7';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
