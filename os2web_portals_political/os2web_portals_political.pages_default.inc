@@ -103,7 +103,7 @@ function os2web_portals_political_default_page_manager_handlers() {
       'use_pager' => 0,
       'pager_id' => '0',
       'override_title' => 1,
-      'override_title_text' => '',
+      'override_title_text' => '<a>Aktuelt</a>',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -127,7 +127,7 @@ function os2web_portals_political_default_page_manager_handlers() {
     $pane->access = array();
     $pane->configuration = array(
       'override_title' => 1,
-      'override_title_text' => 'Søg i dagsordner',
+      'override_title_text' => '<a>Søg i dagsordner</a>',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -268,7 +268,10 @@ function os2web_portals_political_default_page_manager_handlers() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'grid-3',
+    );
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
